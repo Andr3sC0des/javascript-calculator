@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap')
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css")
+    
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+
+body
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 100vh
+    font-family: 'Mulish', sans-serif
+    background: #193543
+
+html
+    font-size: 14px
+
+.calculator
+    color: #fff
+    background: #221e1f
+    &__screen
+        background: #2c292a
+        width: 300px
+        height: 200px
+        position: relative
+        overflow: hidden
+    &__buttons
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        justify-items: center
+        align-items: center
+        padding: 1rem
+        gap: 1rem
+    &__button
+        cursor: pointer
+        width: 50px
+        height: 50px
+        border-radius: 0.5rem
+        background: #193543
+        color: #fff
+        display: flex
+        justify-content: center
+        align-items: center
+        font-size: 1.2rem
+        border: none
+        &:active
+            opacity: 0.7
+    &__operations
+        position: absolute
+        font-size: 1.5rem
+        display: block
+        top: 50%
+        right: 1rem
+    &__input    
+        position: absolute
+        font-size: 2.5rem
+        display: block
+        top: 70%
+        right: 1rem
+        font-weight: bold
+        max-width: 300px
